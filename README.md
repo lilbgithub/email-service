@@ -16,11 +16,11 @@ Run with `./gradlew build`.
 
 #TradeOffs/TODOs
 1. Implement Tests
-2. Implement get endpoint to query status of async emails
+2. Implement get endpoint to query status of async jobs
 
 #Anything else to include??
 1. This may be out of scope of the assignment,
    however, another approach to implement fallback would be to
    internally redirect to secondary provider if the primary provider fails/unavailable.
-2. Integrating with key managment system to dynamically changing configuration without application redeploy.
+2. Integrating with key management system to dynamically changing configuration without application redeploy.
 
