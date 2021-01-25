@@ -1,4 +1,4 @@
-package com.email.springboot.model;
+package com.email.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

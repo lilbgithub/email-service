@@ -1,4 +1,4 @@
-package com.email.springboot;
+package com.email;
 
 import java.util.Arrays;
 

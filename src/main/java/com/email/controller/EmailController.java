@@ -1,7 +1,7 @@
-package com.email.springboot.controller;
+package com.email.controller;
 
-import com.email.springboot.service.EmailService;
-import com.email.springboot.model.EmailDto;
+import com.email.model.EmailDto;
+import com.email.service.EmailService;
 import org.jsoup.Jsoup;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

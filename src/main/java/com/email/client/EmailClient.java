@@ -1,6 +1,6 @@
-package com.email.springboot.client;
+package com.email.client;
 
-import com.email.springboot.model.EmailDto;
+import com.email.model.EmailDto;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;

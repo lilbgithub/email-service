@@ -1,4 +1,4 @@
-package com.email.springboot.model;
+package com.email.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

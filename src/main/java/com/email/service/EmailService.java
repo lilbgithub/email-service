@@ -1,8 +1,8 @@
-package com.email.springboot.service;
+package com.email.service;
 
-import com.email.springboot.client.SnailgunClient;
-import com.email.springboot.client.SpendgridClient;
-import com.email.springboot.model.EmailDto;
+import com.email.model.EmailDto;
+import com.email.client.SnailgunClient;
+import com.email.client.SpendgridClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
