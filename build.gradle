@@ -1,0 +1,35 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.3.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.email'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// tag::actuator[]
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	// end::actuator[]
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile('org.springframework.boot:spring-boot-starter-validation')
+	compile('javax.validation:validation-api:2.0.1.Final')
+	annotationProcessor('org.projectlombok:lombok:1.18.8')
+	testAnnotationProcessor('org.projectlombok:lombok:1.18.8')
+	compileOnly('org.projectlombok:lombok:1.18.8')
+	compile('org.jsoup:jsoup:1.13.1')
+	// tag::tests[]
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	// end::tests[]
+}
+
+test {
+	useJUnitPlatform()
+}
