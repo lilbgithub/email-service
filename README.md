@@ -27,7 +27,8 @@ POST susccess responses :
 ```
   i. Supports/Enforces the strict schema check 
   ii. Spring dependency injection allows loose coupling
-  iii.vJava polymorphism/inharetance promotes code reuse and allows implementation to change at runtime 
+  iii. Java polymorphism/inharetance promotes code reuse 
+       and allows implementation to change at runtime 
   vi. Matured libraries/framework.
   v. Provides better object processing/transforming ability. 
 ```
