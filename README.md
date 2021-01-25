@@ -20,7 +20,7 @@ POST susccess responses :
 202 when async response
 
 ```
-#Stack selection
+# Stack selection
 1. Language: java
 2. Framework: springboot
 3. Reason:
@@ -30,11 +30,11 @@ POST susccess responses :
   d. Matured libraries/framework.
   e. Provides better object processing/transforming ability. 
 
-#TradeOffs/TODOs
+# TradeOffs/TODOs
 1. Implement Tests
 2. Implement get endpoint to query status of async jobs
 
-#Anything else to include??
+# Anything else to include??
 1. This may be out of scope of the assignment,
    however, another approach to implement fallback would be to
    internally redirect to secondary provider if the primary provider fails/unavailable.
