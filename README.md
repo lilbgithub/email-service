@@ -18,8 +18,13 @@ POST susccess responses :
 
 200 when sync response
 202 when async response
-
 ```
+
+# Provider selection
+Use application.properties file to switch the provider,
+default to spendgrid provider```spendgrid.enabled=true```
+if flag is false snailgun provider is selected
+
 # Stack selection
 1. Language: java
 2. Framework: springboot
