@@ -23,12 +23,14 @@ POST susccess responses :
 # Stack selection
 1. Language: java
 2. Framework: springboot
-3. Reason:
-  a. Supports/Enforces the strict schema check 
-  b. Spring dependency injection allows loose coupling
-  c. Java polymorphism/inharetance promotes code reuse and allows implementation to change at runtime 
-  d. Matured libraries/framework.
-  e. Provides better object processing/transforming ability. 
+3. Selection criteria:
+```
+  i. Supports/Enforces the strict schema check 
+  ii. Spring dependency injection allows loose coupling
+  iii.vJava polymorphism/inharetance promotes code reuse and allows implementation to change at runtime 
+  vi. Matured libraries/framework.
+  v. Provides better object processing/transforming ability. 
+```
 
 # TradeOffs/TODOs
 1. Implement Tests
