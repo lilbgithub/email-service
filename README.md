@@ -22,8 +22,8 @@ POST susccess responses :
 
 # Provider selection
 Use application.properties file to switch the provider,
-default to spendgrid provider```spendgrid.enabled=true```
-if flag is false snailgun provider is selected
+by default service ueses spendgrid provider i.e ```spendgrid.enabled=true```,
+if this flag is false snailgun provider is used
 
 # Stack selection
 1. Language: java
