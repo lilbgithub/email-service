@@ -30,12 +30,13 @@ if flag is false snailgun provider is selected
 2. Framework: springboot
 3. Selection criteria:
 ```
-  i. Supports/Enforces the strict schema check 
-  ii. Spring dependency injection allows loose coupling
-  iii. Java polymorphism/inharetance promotes code reuse 
-       and allows implementation to change at runtime 
+  i.  Allow loose coupling through dependency injection.
+  ii. Strict typeing to ensure data integrity 
+  iii. Polymorphism and inharetance to promote code reuse where possible
+      and allows implementation to vary when needed at runtime 
   vi. Matured libraries/framework.
-  v. Provides better object processing/transforming ability. 
+  v. Better object processing/transforming ability. 
+  vi. Schema validation and error handler support
 ```
 
 # TradeOffs/TODOs
