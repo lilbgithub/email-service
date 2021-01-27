@@ -26,11 +26,6 @@ public class EmailController {
         this.emailService = emailService;
     }
 
-    @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
-    }
-
     /**
      * Send email controller
      *
