@@ -4,12 +4,12 @@ import com.email.model.EmailDto;
 import com.email.model.SpendGridEmail;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 @Primary
 @Slf4j
 public class SpendGridClient implements EmailClient {

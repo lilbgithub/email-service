@@ -4,11 +4,11 @@ import com.email.model.EmailDto;
 import com.email.model.SnailGunEmail;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 @Slf4j
 public class SnailGunClient implements EmailClient {
     private final String SNAIL_GUN_CLIENT_URI = BASE_URL + "/snailgun/send_email";
