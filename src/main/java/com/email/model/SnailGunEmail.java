@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SnailgunEmail {
+public class SnailGunEmail {
     private String id;
     private String from_email;
     private String from_name;

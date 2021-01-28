@@ -30,8 +30,8 @@ public class EmailDto implements Serializable {
      *
      * @return SpendgridEmail object
      */
-    public SpendgridEmail toSpendgridEmail() {
-        SpendgridEmail email = new SpendgridEmail();
+    public SpendGridEmail toSpendgridEmail() {
+        SpendGridEmail email = new SpendGridEmail();
         email.setSender(this.from_name + "<" + this.from + ">");
         email.setRecipient(this.to_name + "<" + this.to + ">");
         email.setSubject(this.subject);
@@ -45,8 +45,8 @@ public class EmailDto implements Serializable {
      *
      * @return SnailgunEmail object
      */
-    public SnailgunEmail toSnailgunEmail() {
-        SnailgunEmail email = new SnailgunEmail();
+    public SnailGunEmail toSnailgunEmail() {
+        SnailGunEmail email = new SnailGunEmail();
         email.setFrom_name(this.from_name);
         email.setFrom_email(this.from);
         email.setTo_name(this.to_name);

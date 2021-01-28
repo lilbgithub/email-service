@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class SpendgridEmail {
+public class SpendGridEmail {
     private String sender;
     private String recipient;
     private String subject;

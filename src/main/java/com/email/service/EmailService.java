@@ -1,8 +1,8 @@
 package com.email.service;
 
 import com.email.model.EmailDto;
-import com.email.client.SnailgunClient;
-import com.email.client.SpendgridClient;
+import com.email.client.SnailGunClient;
+import com.email.client.SpendGridClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -10,16 +10,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
-    private final SpendgridClient spendgridClient;
-    private final SnailgunClient snailgunClient;
+    private final SpendGridClient spendGridClient;
+    private final SnailGunClient snailGunClient;
 
     @Value("${spendgrid.enabled}")
-    private boolean spendgridEnabled;
+    private boolean spendGridEnabled;
 
     @Autowired
-    public EmailService(SpendgridClient spendgridClient, SnailgunClient snailgunClient) {
-        this.spendgridClient = spendgridClient;
-        this.snailgunClient = snailgunClient;
+    public EmailService(SpendGridClient spendGridClient, SnailGunClient snailGunClient) {
+        this.spendGridClient = spendGridClient;
+        this.snailGunClient = snailGunClient;
     }
 
     /**
@@ -28,9 +28,9 @@ public class EmailService {
      * @param emailDto email object
      */
     public ResponseEntity sendEmail(EmailDto emailDto) {
-        if(spendgridEnabled){
-            return spendgridClient.sendEmail(emailDto);
+        if(spendGridEnabled){
+            return spendGridClient.sendEmail(emailDto);
         }
-        return snailgunClient.sendEmail(emailDto);
+        return snailGunClient.sendEmail(emailDto);
     }
 }

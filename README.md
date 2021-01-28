@@ -1,10 +1,15 @@
 
 # Email service
-Run with `./gradlew bootRun`.
+
+Build with `./gradlew bootRun`.
+
 Run with `./gradlew build`.
- Service URI [http://localhost:8080/emails](http://localhost:8080/emails) after startup.
+
+Service URI [http://localhost:8080/emails](http://localhost:8080/emails)
+
+# API Details
+Send email using following POST request body
 ```sh
-POST Request :
 {
     "to_name": "bob",
     "to": "bob@gmail.com",
@@ -13,17 +18,24 @@ POST Request :
     "subject": "hello there",
     "body": "some message"
 }
-
-POST susccess responses :
-
-200 when sync response
-202 when async response
 ```
 
-# Provider selection
-Use application.properties file to switch the provider,
-by default service ueses spendgrid provider i.e ```spendgrid.enabled=true```,
-if this flag is false snailgun provider is used
+Success response code:
+
+```sh
+200 for sync response
+202 for async response
+```
+
+Error Codes:
+```sh
+4xx Client errors
+5xx Server error 
+```
+# How to switch email provider?
+Use application.properties file's ```spendgrid.enabled``` to switch the provider,
+by default service is configured to use ```spendgrid``` provider i.e ```spendgrid.enabled=true```,
+set this flag to false to switch to ```snailgun```.
 
 # Stack selection
 1. Language: java
@@ -33,10 +45,10 @@ if this flag is false snailgun provider is used
   i.  Allow loose coupling through dependency injection.
   ii. Strict typeing to ensure data integrity 
   iii. Polymorphism and inharetance to promote code reuse where possible
-      and allows implementation to vary when needed at runtime 
-  vi. Matured libraries/framework.
+      and allow implementation to vary when needed at runtime 
+  vi. Mature libraries/framework.
   v. Better object processing/transforming ability. 
-  vi. Schema validation and error handler support
+  vi. Robust validation and error handling support.
 ```
 
 # TradeOffs/TODOs
