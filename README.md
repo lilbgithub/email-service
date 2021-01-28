@@ -29,7 +29,7 @@ Success response code:
 
 Error Codes:
 ```sh
-4xx Client errors
+4xx Client error
 5xx Server error 
 ```
 # How to switch email provider?
