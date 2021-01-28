@@ -25,7 +25,7 @@ public class SnailGunClient implements EmailClient {
         try {
             response = restTemplate.postForObject(SNAIL_GUN_CLIENT_URI, request, SnailGunEmail.class);
         } catch (Exception e) {
-            log.info(SNAIL_GUN__ERROR_MSG, e);
+            log.error(SNAIL_GUN__ERROR_MSG, e);
             return getInternalServerError();
         }
         return ResponseEntity

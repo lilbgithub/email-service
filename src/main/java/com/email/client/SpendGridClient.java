@@ -27,7 +27,7 @@ public class SpendGridClient implements EmailClient {
         try {
             response = restTemplate.postForObject(SPEND_GRID_CLIENT_URI, request, SpendGridEmail.class);
         } catch (Exception e) {
-            log.info(SPEND_GRID_ERROR_MSG, e);
+            log.error(SPEND_GRID_ERROR_MSG, e);
             return getInternalServerError();
         }
         return ResponseEntity
