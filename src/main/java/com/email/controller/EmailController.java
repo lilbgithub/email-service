@@ -39,6 +39,4 @@ public class EmailController {
                 POST_EMAIL_INFO_MESSAGE, email.getFrom(), email.getTo(), email.getSubject());
         return emailService.sendEmail(email);
     }
-
-
 }
