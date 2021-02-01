@@ -3,14 +3,11 @@ package com.email.client;
 import com.email.model.EmailDto;
 import com.email.model.SnailGunEmail;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-@Component
 @Slf4j
 public class SnailGunClient implements EmailClient {
     public static final String SNAIL_GUN_CLIENT_URI = BASE_URL + "/snailgun/send_email";
@@ -20,9 +17,8 @@ public class SnailGunClient implements EmailClient {
     private String apiKey;
     private RestTemplate restTemplate;
 
-    @Autowired
     public SnailGunClient(RestTemplate restTemplate){
-        this.restTemplate =restTemplate;
+        this.restTemplate = restTemplate;
     }
 
     @Override

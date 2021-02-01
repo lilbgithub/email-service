@@ -3,16 +3,11 @@ package com.email.client;
 import com.email.model.EmailDto;
 import com.email.model.SpendGridEmail;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-@Component
-@Primary
 @Slf4j
 public class SpendGridClient implements EmailClient {
     public static final String SPEND_GRID_CLIENT_URI = BASE_URL + "/spendgrid/send_email";
@@ -22,7 +17,6 @@ public class SpendGridClient implements EmailClient {
     private String apiKey;
     private RestTemplate restTemplate;
 
-    @Autowired
     public SpendGridClient(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
