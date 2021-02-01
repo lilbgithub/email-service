@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
 	id 'groovy'
+	id 'jacoco'
 }
 
 group = 'com.email'
@@ -28,7 +29,30 @@ dependencies {
 	testCompile "org.spockframework:spock-core"
 	testCompile "org.spockframework:spock-junit4"  // you can remove this if your code does not rely on old JUnit 4 rules
 }
+jacocoTestReport {
+	dependsOn test
+	reports {
+		xml.enabled true
+		html.enabled true
+		html.destination file("$buildDir/reports/jacoco")
+	}
+
+	afterEvaluate {
+		classDirectories.setFrom(files(classDirectories.files.collect {
+			fileTree(dir: it,
+					exclude: ['**/model/**']
+			)
+		}))
+	}
+}
 
 test {
 	useJUnitPlatform()
+	finalizedBy jacocoTestReport
 }
+jacoco {
+	toolVersion = "0.8.5"
+	reportsDir = file("$buildDir/jacoco")
+}
+
+
