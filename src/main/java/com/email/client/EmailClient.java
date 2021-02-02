@@ -7,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 public interface EmailClient {
-
-   RestTemplate restTemplate = new RestTemplate();
    String BASE_URL="https://bw-interviews.herokuapp.com";
 
    default HttpHeaders getHeaders(String apiKey) {

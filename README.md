@@ -1,9 +1,8 @@
 
 # Email service
+Build with `./gradlew build`.
 
-Build with `./gradlew bootRun`.
-
-Run with `./gradlew build`.
+Run with `./gradlew bootRun`.
 
 Service URI [http://localhost:8080/emails](http://localhost:8080/emails)
 
