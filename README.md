@@ -3,7 +3,7 @@
 
 Build with `./gradlew build`
 
-Run Test  `./gradlew test` 
+Run unit test  `./gradlew test` 
 
 Run service with `./gradlew bootRun`
 
