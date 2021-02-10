@@ -1,8 +1,11 @@
 
 # Email service
-Build with `./gradlew build`.
 
-Run with `./gradlew bootRun`.
+Build with `./gradlew build`
+
+Run Test  `./gradlew test` 
+
+Run service with `./gradlew bootRun`
 
 Service URI [http://localhost:8080/emails](http://localhost:8080/emails)
 
@@ -50,7 +53,7 @@ set this flag to false to switch to ```snailgun```.
   vi. Robust validation and error handling support.
 ```
 
-# TradeOffs/TODOs
+# TODOs
 1. Implement get endpoint to query status of async jobs
 2. Implement integration tests
 
