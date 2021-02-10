@@ -3,7 +3,6 @@ package com.email.controller;
 import com.email.model.EmailDto;
 import com.email.service.EmailService;
 import lombok.extern.slf4j.Slf4j;
-import org.jsoup.Jsoup;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

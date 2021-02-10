@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 public class SnailGunClient implements EmailClient {
-    public static final String SNAIL_GUN_CLIENT_URI = BASE_URL + "/snailgun/send_email";
+    public static final String SNAIL_GUN_CLIENT_URI = BASE_URL + "/snailgun/emails";
     private static final String SNAIL_GUN__ERROR_MSG = "Unable to post email using SnailGun provided";
 
     @Value("${snailgun.apiKey}")
