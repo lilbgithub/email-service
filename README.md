@@ -51,8 +51,8 @@ set this flag to false to switch to ```snailgun```.
 ```
 
 # TradeOffs/TODOs
-1. Implement Tests
-2. Implement get endpoint to query status of async jobs
+1. Implement get endpoint to query status of async jobs
+2. Implement integration tests
 
 # Anything else to include??
 1. This may be out of scope of the assignment,
